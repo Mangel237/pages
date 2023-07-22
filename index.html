@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cartas cursis </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #23F0D7 ;
+		}
+
+		header {
+			width: 100%;
+			padding: 20px;
+			background-color: #191414;
+			color: white;
+			font-size: 24px;
+			text-align: center;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.letter {
+			width: 60%;
+			padding-right: 20px;
+			box-sizing: border-box;
+		}
+
+		.song {
+			width: 30%;
+			margin-top: 20px;
+		}
+
+		.video {
+			width: 100%;
+			margin-top: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			color: #191414;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			color: #191414;
+			margin-bottom: 20px;
+		}
+
+		.song-header {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.song-header img {
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+
+		.song-title {
+			font-size: 24px;
+			font-weight: bold;
+			color: white;
+			margin-right: 10px;
+		}
+
+		.song-artist {
+			font-size: 24px;
+			color: white;
+		}
+
+		.glide {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.glide__slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		.glide__arrows {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+
+		.glide__arrow {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			font-size: 24px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+
+		.glide__arrow:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.video-input {
+			width: 100%;
+			padding: 10px;
+			font-size: 24px;
+			border: none;
+			border-bottom: 2px solid white;
+			background-color: transparent;
+			color: white;
+			margin-top: 20px;
+		}
+
+		.button {
+			padding: 10px 20px;
+			font-size: 24px;
+			background-color: #191414;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		.button:hover {
+			background-color:#E74C3C;
+		}
+
+		.button:focus {
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<header>¡Buenos dias!</header>
+	<div class="container">
+		<div class="letter">
+			
+			<p>"Desde el momento en que te vi, supe que eras diferente. Con tus lentes y tus ojos marrones, me cautivaste por completo. Cada vez que te ríes, sé que hay algo especial en ti. Eres dulce, divertida y siempre me haces reír, incluso cuando las cosas parecen difíciles.            </p>
+			<p>Conocerte ha sido un verdadero regalo, aunque admito que aún hay mucho que quiero descubrir de ti. Pero esa curiosidad solo aumenta mi deseo de conocerte aún más. Quiero descubrir tus sueños, tus metas y tus pasatiempos. Quiero ser tu confidente, tu apoyo y tu compañero en todo lo que hagas.</p>
+            <p>Te mando un abrazo y un beso virtual de buenos días, y espero que este mensaje te haga sentir especial y amada en todo momento. Que tengas un día maravilloso </p>
+		</div>
+		<div class="audio">
+			<h2>Video para ti</h2>
+			<video src="Como yo te veo  CANCIÓN PARA DEDICAR.mp3" width=320  height=240 controls poster="65d9cf3a08b17d3bab412217e112af92.jpg">
+                Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
+                La versión descargable está disponible en <a href="C:\Users\Mangel\OneDrive\Escritorio\carta 2">Enlace</a>. 
+                
+                
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1"></script>
+	<script>
+		new Glide('.glide', {
+			type: 'carousel',
+			perView: 1,
+			autoplay: 5000,
+			hoverpause: true,
+			keyboard: true,
+			arrows: {
+				prev: '.glide__arrow--left',
+				next: '.glide__arrow--right'
+			}
+		}).mount();
+	</script>
+</body>
+</html>
